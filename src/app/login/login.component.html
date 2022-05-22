@@ -1,0 +1,28 @@
+
+<form [formGroup] = "loginForm" (ngSubmit)="onSubmit()" >
+    <div class="container">
+    <div class="form-group" style="width: auto; display: inline;">
+      <label for="exampleInputEmail">Email address</label>
+      <input type="email" 
+      class="form-control" 
+      id="exampleInputEmail" 
+      aria-describedby="emailHelp"
+      placeholder="Enter Email address"
+      formControlName = "email">
+      <small id="emailHelp" class="form-text text-muted"> we will never share your email with anyone</small>
+    </div>
+    <div class="form-group" style="width: auto; display: inline;">
+      <label for="exampleInputPassword">Password</label>
+      <input type="password" 
+      class="form-control" 
+      id="exmpaleInputPassword" 
+      placeholder="Password"
+      formControlName ="password">
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheckbox">
+      <label for="exampleCheckbox" class="form-check-label">Check me now</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+  </form>
